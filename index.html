@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyFirstApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
 	<title>Welcome to Coursera</title>
 </head>
 <body>
 	<h1>Hi Coursera</h1>
 	<h2>hello everyone</h2>
+	<div ng-controller="myController">
+		
+		<input type="text" ng-model="name" ng-keyup="displayNumericValue();">
+		
+		totalnumeric value of input field is : {{totalNumericValue}}
+		
+	</div>
 </body>
 </html>
