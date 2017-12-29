@@ -2,10 +2,10 @@
     'use strict';
 
 angular.module('filterAJ',[])
-       .controller('filterController',filterController);
+       .controller('LunchCheckController',LunchCheckController);
        
-       filterController.$inject = ['$scope','$filter'];
-       function filterController($scope,$filter){
+       LunchCheckController.$inject = ['$scope','$filter'];
+       function LunchCheckController($scope,$filter){
         $scope.items = "";
         $scope.number = "";
         $scope.stateOfBeing = "";  
